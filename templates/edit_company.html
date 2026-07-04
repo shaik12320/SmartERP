@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Company</title>
+</head>
+<body>
+
+<h1>Edit Company</h1>
+
+<form method="POST">
+
+    <input type="text" name="company_name"
+           value="{{ company.company_name }}" required><br><br>
+
+    <input type="text" name="owner_name"
+           value="{{ company.owner_name }}" required><br><br>
+
+    <input type="text" name="gst_number"
+           value="{{ company.gst_number }}"><br><br>
+
+    <input type="text" name="phone"
+           value="{{ company.phone }}"><br><br>
+
+    <input type="email" name="email"
+           value="{{ company.email }}"><br><br>
+
+    <input type="text" name="website"
+           value="{{ company.website }}"><br><br>
+
+    <textarea name="address">{{ company.address }}</textarea><br><br>
+
+    <input type="text" name="pincode"
+           value="{{ company.pincode }}"><br><br>
+
+    <button type="submit">Update Company</button>
+
+</form>
+
+</body>
+</html>

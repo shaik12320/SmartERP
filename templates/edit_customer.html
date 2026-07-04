@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Customer</title>
+</head>
+<body>
+
+<h1>Edit Customer</h1>
+
+<form method="POST">
+
+    <label>Name</label><br>
+    <input type="text"
+           name="name"
+           value="{{ customer.name }}"
+           required><br><br>
+
+    <label>Mobile</label><br>
+    <input type="text"
+           name="mobile"
+           value="{{ customer.mobile }}"><br><br>
+
+    <label>Email</label><br>
+    <input type="email"
+           name="email"
+           value="{{ customer.email }}"><br><br>
+
+    <label>Address</label><br>
+    <textarea name="address">{{ customer.address }}</textarea><br><br>
+
+    <button type="submit">Update Customer</button>
+
+</form>
+
+<br>
+
+<a href="/customers">Back to Customers</a>
+
+</body>
+</html>
